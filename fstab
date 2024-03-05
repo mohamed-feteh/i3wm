@@ -13,6 +13,10 @@ UUID=bdc0bd6a-0d38-48ed-a96f-23db2c4a72bf /               ext4    errors=remount
 # /boot/efi was on /dev/nvme0n1p1 during installation
 UUID=582D-2BAC  /boot/efi       vfat    umask=0077      0       1
 
-/dev/disk/by-uuid/6E9024FA9024CB03 /home/rock/E auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=E 0 0
-/dev/disk/by-uuid/F22A55A72A55699D /home/rock/D auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=D 0 0
-/dev/disk/by-uuid/01D7C75404243120 /home/rock/OS auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=OS 0 0
+#/dev/disk/by-uuid/6E9024FA9024CB03 /home/rock/E auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=E 0 0
+#/dev/disk/by-uuid/F22A55A72A55699D /home/rock/D auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=D 0 0
+#/dev/disk/by-uuid/01D7C75404243120 /home/rock/OS auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=OS 0 0
+##
+UUID=6E9024FA9024CB03   /home/rock/E  ntfs  defaults,uid=1000,gid=1000,umask=0000,fmask=0111    0   0
+UUID=F22A55A72A55699D   /home/rock/D  ntfs  defaults,uid=1000,gid=1000,umask=0000,fmask=0111>
+UUID=01D7C75404243120   /home/rock/OS  ntfs  defaults,uid=1000,gid=1000,umask=0000,fmask=0111>
