@@ -142,8 +142,8 @@ set $ws13 "13"
 
 #my current setup
 set $firstMonitor eDp
-set $secondMonitor  HDMI-A-0
-set $thirdMonitor  DP-1-1
+set $secondMonitor HDMI-A-0
+set $thirdMonitor DP-1-1
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
@@ -252,7 +252,7 @@ killall xxkb 2> /dev/null
 xxkb 2> /dev/null & "
 
 #Background
-exec_always --no-startup-id "feh --bg-scale ~/Documents/levi.jpg"
+exec_always --no-startup-id "feh --bg-scale ~/317747743_10229342268371650_907182112138927735_n.jpg"
 
 default_border pixel 5
 
@@ -342,9 +342,3 @@ bindsym $mod+i exec /usr/bin/dmenu-emoji | dmenu -i -l 10 | awk '{print $1}' | t
 
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-##
-#bindsym $mod+u exec --no-startup-id kitty -e 'zsh -c "source ~/.zshrc & lf"'
-bindsym $mod+u exec --no-startup-id kitty -e zsh -c 'source ~/.zshrc && lf'
-
-#bindsym $mod+u exec termite -e zsh --rcfile <(echo '. ~/.zshrc & lf')
